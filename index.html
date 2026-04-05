@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rameshwar Gaud | Electrical Engineer</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        body {
+            background: #000;
+            color: #f11e93;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            border-bottom: 1px solid #6c00ff;
+            position: relative;
+            z-index: 1;
+        }
+
+        nav a {
+            margin: 0 12px;
+            color: hsl(310, 76%, 56%);
+            text-decoration: none;
+        }
+
+        header img {
+            height: 75px;
+        }
+
+        /* HERO */
+        .hero {
+            background: url('hero-bg.png') no-repeat center center/cover;
+            max-width: 1000px;
+            margin: 35px auto;
+            padding: 50px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 0 25px lab(67.28% -64.65 66.62 / 0.733);
+            color: #c0e423;
+            position: relative;
+            z-index: 1;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: auto;
+            overflow: hidden;
+            border: 3px solid #0f0;
+            box-shadow: 0 0 25px #0f0;
+        }
+
+        .profile-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-top: 15px;
+        }
+
+        p {
+            margin: 15px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            margin: 10px;
+            border: 2px solid #0f0;
+            color: #0f0;
+            border-radius: 12px;
+            transition: .3s;
+            box-shadow: 0 0 10px #0f0, inset 0 0 10px #0f0;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 25px #0f0;
+        }
+
+        .social a {
+            margin: 12px;
+            font-size: 28px;
+            display: inline-block;
+            transition: .3s;
+        }
+
+        .social a:hover {
+            transform: scale(1.3);
+            text-shadow: 0 0 20px #0099ff;
+        }
+
+        .section {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* CARD BACKGROUNDS & TEXT COLORS */
+        .card.skills {
+            background: url('skills-bg.png') no-repeat center center/cover;
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid #f549d0;
+            margin-bottom: 20px;
+            color: hwb(182 9% 12%);
+        }
+
+        .card.skills h3 {
+            color: hsl(305, 79%, 55%);
+        }
+
+        .card.education {
+            background: url('education-bg.png') no-repeat center center/cover;
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid orange;
+            margin-bottom: 20px;
+            color: hsl(130, 74%, 46%);
+        }
+
+        .card.education h3 {
+            color: #ffdd00;
+        }
+
+        .card.contact {
+            background: url('contact-bg.png') no-repeat center center/cover;
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid #ff0080;
+            margin-bottom: 20px;
+            color: hsl(123, 92%, 48%);
+        }
+
+        .card.contact h3 {
+            color: hsl(71, 78%, 52%);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #444;
+            color: #00ff99;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* BUBBLES CANVAS */
+        #bubbleCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="#">
+            <img src="logo.png" alt="RG Logo">
+        </a>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <div class="hero">
+        <div class="profile-img">
+            <img src="image.jpg" alt="profile">
+        </div>
+        <h1>Rameshwar Gaud</h1>
+        <p>
+            Diploma in Electrical Engineering holder with experience in Lithium-ion Battery
+            Manufacturing, Testing & Quality Assurance.
+        </p>
+
+        <a href="#projects" class="btn">View Work</a>
+        <a href="https://rameshwargaud9076-arch.github.io/shiva-event/" class="btn">My business</a>
+        <a href="./cv.pdf" class="btn" download>
+            <i class="fas fa-download"></i> Download CV
+        </a>
+
+        <!-- SOCIAL -->
+        <div class="social">
+            <a href="https://wa.me/91907679223"><i class="fab fa-whatsapp" style="color:#25D366;"></i></a>
+            <a href="mailto:rameshwargaud9076@gmail.com"><i class="fas fa-envelope" style="color:#ffdd00;"></i></a>
+            <a href="https://github.com/rameshwargaud9076-arch"><i class="fab fa-github" style="color:#fff;"></i></a>
+            <a href="https://www.linkedin.com/in/rameshwar-gaud-73281b37b"><i class="fab fa-linkedin"
+                    style="color:#0077b5;"></i></a>
+            <a href="https://x.com/sani_kashyap1"><i class="fab fa-twitter" style="color:#1DA1F2;"></i></a>
+        </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="section" id="projects">
+        <div class="card skills">
+            <h3>🔹 Skills / Expertise</h3>
+            <p>✔ Battery Manufacturing & Testing:</p>
+            <p> • Lithium-ion battery production</p>
+            <p> • Cell assembly & testing</p>
+            <p> • Battery management system (BMS) handling</p>
+            <p> • Performance & safety testing of battery cells</p>
+
+            <p>✔ Quality & Process Control:</p>
+            <p> • Quality assurance across production stages</p>
+            <p> • Troubleshooting defects in cells & packs</p>
+            <p> • FQC (Final Quality Control) inspection</p>
+
+            <p>✔ Technical & Operational Skills:</p>
+            <p> • End-to-end plant operations</p>
+            <p> • Battery pack assembly and testing</p>
+            <p> • Data recording & reporting for QA/QC</p>
+
+            <p>✔ Tools & Technologies:</p>
+            <p> • BMS software & monitoring tools</p>
+            <p> • Multimeters, battery testers, and diagnostic equipment</p>
+            <p> • Process control documentation</p>
+        </div>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="section" id="education">
+        <div class="card education">
+            <h3>Education</h3>
+            <p>Diploma in Electrical Engineering - BTEUP (2025)</p>
+            <p>Intermediate - UP Board (2022)</p>
+            <p>High School - UP Board (2020)</p>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="section" id="contact">
+        <div class="card contact">
+            <h3>Contact</h3>
+            <p>📱 907679223</p>
+            <p>📧 rameshwargaud9076@gmail.com</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>⚡ Rameshwar Gaud ⚡</p>
+    </footer>
+
+    <!-- BUBBLE CANVAS -->
+    <canvas id="bubbleCanvas"></canvas>
+
+    <script>
+        const canvas = document.getElementById('bubbleCanvas');
+        const ctx = canvas.getContext('2d');
+        let bubbles = [];
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        class Bubble {
+            constructor() { this.reset(); }
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = canvas.height + Math.random() * 100;
+                this.radius = Math.random() * 20 + 5;
+                this.speed = Math.random() * 1.5 + 0.5;
+                this.angle = Math.random() * 2 * Math.PI;
+                this.color = `hsla(${Math.random() * 360}, 70%, 60%, 0.6)`;
+                this.swing = Math.random() * 1.5 + 0.5;
+            }
+            update() {
+                this.y -= this.speed;
+                this.x += Math.sin(this.angle) * this.swing;
+                this.angle += 0.01;
+                if (this.y + this.radius < 0) this.reset();
+                if (this.x - this.radius > canvas.width) this.x = 0;
+                if (this.x + this.radius < 0) this.x = canvas.width;
+            }
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+                ctx.fillStyle = this.color;
+                ctx.fill();
+            }
+        }
+
+        for (let i = 0; i < 80; i++) bubbles.push(new Bubble());
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            bubbles.forEach(b => { b.update(); b.draw(); });
+            requestAnimationFrame(animate);
+        }
+        animate();
+    </script>
+
+</body>
+
+</html>
